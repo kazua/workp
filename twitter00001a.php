@@ -1,4 +1,5 @@
 <?php
+//write kazua
 header("Content-Type:text/html;charset=UTF-8");
 require_once('../lib/twitteroauth.php');
  
