@@ -6,8 +6,7 @@
 function pc($value) {
     static $p = array();
     if (is_int($value) === false || $value <= 1) return false;
-    else if (array_key_exists($value, $p) === true && $p[$value] === true) return true;
-    else if (array_key_exists($value, $p) === true && $p[$value] === false) return false;
+    else if (array_key_exists($value, $p) === true) return $p[$value];
     $a = range(1, (int) round($value / 2));
     foreach ($a as $v) {
         if ($v !== 1 && $value % $v === 0) {
